@@ -1,0 +1,47 @@
+.bookDetail h2{
+    text-align: center;
+    margin-top: 50px;
+}
+.BookDetailLink{
+    text-align: center;
+  
+}
+.BookDetailLink a{
+text-decoration: none;
+color: black;
+border: 1px solid black;
+padding: 4px 20px;
+border-radius: 4px;
+
+}
+.bookDetail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.bookdetailInfo {
+    margin: 80px 0px;
+    width: 40%;
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+    gap: 40px;
+    flex-direction: row-reverse;
+    height: 250px;
+    padding: 20px;
+   
+    border: 1px solid black;
+   
+}
+
+
+.bookDetailImg{
+    display: flex;
+    align-items: center;
+   
+    padding-right: 60px;
+    height: 250px;
+}
