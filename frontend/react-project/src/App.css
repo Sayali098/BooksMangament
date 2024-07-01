@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .ulList {
   display: flex;
   justify-content: center;
@@ -6,10 +11,11 @@
   font-size: 20px;
   padding: 20px 0px;
   width: 100%;
-margin-top: 0px;
-  background-color: rgb(230, 228, 228);
+  margin-top: 0px;
+  color: white;
+  background-color: rgb(56, 65, 82);
 }
 .ulList li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }

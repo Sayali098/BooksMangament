@@ -30,7 +30,7 @@ const BookDetail = () => {
     <div className="bookDetail">
       <h2>Book Details</h2>
       <div className="bookdetailInfo">
-      <div>
+      <div className="bookDetailRight">
         <p>Title: {book.title}</p>
         <p>Author: {book.author}</p>
         <p>Type: {book.type}</p>
@@ -45,11 +45,15 @@ const BookDetail = () => {
           <img
             src={`http://localhost:5000/${book.coverPhotoUrl}`}
             alt={book.title}
-            style={{ maxWidth: "200px" }}
+            className="bookImg"
           />
         )}
       </div>
       </div>
+
+
+
+
       <div className="BookDetailLink">
         <Link to="/user">Back </Link>
       </div>
