@@ -1,8 +1,6 @@
-// BookDetails.jsx
-
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import "./BookDetail.css"
+import "./BookDetail.css";
 
 const BookDetail = () => {
   const { id } = useParams();
@@ -30,35 +28,32 @@ const BookDetail = () => {
     <div className="bookDetail">
       <h2>Book Details</h2>
       <div className="bookdetailInfo">
-      <div className="bookDetailRight">
-        <p>Title: {book.title}</p>
-        <p>Author: {book.author}</p>
-        <p>Type: {book.type}</p>
-        <p>Genre: {book.genre}</p>
-        <p>Pages: {book.pages}</p>
-        <p>Price: {book.price}</p>
-        <p>Publication: {book.publication}</p>
-        {/* <p>Activate</p> */}
+        <div className="bookDetailRight">
+          <p>Title: {book.title}</p>
+          <p>Author: {book.author}</p>
+          <p>Type: {book.type}</p>
+          <p>Genre: {book.genre}</p>
+          <p>Pages: {book.pages}</p>
+          <p>Price: {book.price}</p>
+          <p>Publication: {book.publication}</p>
+          {/* <p>Activate</p> */}
+        </div>
+        <div className="bookDetailImg">
+          {book.coverPhotoUrl && (
+            <img
+              src={`http://localhost:5000/${book.coverPhotoUrl}`}
+              alt={book.title}
+              className="bookImg"
+            />
+          )}
+        </div>
       </div>
-      <div className="bookDetailImg">
-        {book.coverPhotoUrl && (
-          <img
-            src={`http://localhost:5000/${book.coverPhotoUrl}`}
-            alt={book.title}
-            className="bookImg"
-          />
-        )}
-      </div>
-      </div>
-
-
-
 
       <div className="BookDetailLink">
         <Link to="/user">Back </Link>
       </div>
     </div>
-  ); 
+  );
 };
 
 export default BookDetail;

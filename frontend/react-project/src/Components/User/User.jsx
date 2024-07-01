@@ -31,6 +31,7 @@ const User = () => {
             <th>Pages</th>
             <th>Price</th>
             <th>Publication</th>
+          
             <th>Actions</th>
           </tr>
         </thead>
@@ -43,7 +44,9 @@ const User = () => {
               <td>{book.genre}</td>
               <td>{book.pages}</td>
               <td>{book.price}</td>
+
               <td>{book.publication}</td>
+          
               <td>
                 <Link to={`/books/${book._id}`}>View</Link>
               </td>
